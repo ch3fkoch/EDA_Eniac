@@ -1,0 +1,5 @@
+Welchen Zeitraum umfasst der Datensatz?
+Wie hoch ist der Gesamtumsatz in diesem Zeitraum?
+Gibt es saisonale Muster in der Umsatzentwicklung?
+Was sind die meistverkauften Produkte?
+Welche Produkte generieren den größten Umsatz?

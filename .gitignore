@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# macOS
+.DS_Store
+
+# Data / Caching / Output
+Daten/raw/
+Daten/clean/*.csv
+!Daten/clean/.gitkeep
+*.log
+
+# Ignore Tolga's large CSV files if any exist in the root or subfolders
+*.csv
+# But allow specific configuration or tiny mapping files if needed later
