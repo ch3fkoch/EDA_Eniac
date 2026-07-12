@@ -1,4 +1,4 @@
-# Eniac E-Commerce: Data Analysis & Discount Strategy 🚀
+# Eniac E-Commerce: Data Analysis & Discount Strategy 
 
 ![Python](https://img.shields.io/badge/Python-3.x-blue.svg)
 ![Pandas](https://img.shields.io/badge/Pandas-Data_Analysis-yellow.svg)
@@ -9,7 +9,7 @@ Willkommen im Eniac-Datenanalyseprojekt!
 
 Dieses Repository enthält eine modulare Daten-Pipeline, um Rohtransaktionsdaten in visuelle Business-Insights und KPIs für das E-Commerce-Management zu verwandeln.
 
-## 🎯 Business Case
+## Business Case
 Das Unternehmen **Eniac** stand vor einem strategischen Konflikt zwischen Marketing (Wachstum durch Rabatte) und Investoren (Schutz der Marke und Marge). Dieses Projekt analysiert einen großen Datensatz an Bestellungen und leitet daraus harte Fakten ab:
 - **Datenbereinigung:** Entfernung von fehlerhaften Preisformatierungen und fehlenden Daten (~60-70% Ausschuss bei Rohdaten, um eine verlässliche 100%-saubere Baseline zu schaffen).
 - **Saisonalität vs. Baseline:** Beweisführung, dass der Kernumsatz stabil ist, das echte Wachstum aber rein durch Q4-Events (Black Friday) getrieben wird.
@@ -17,11 +17,11 @@ Das Unternehmen **Eniac** stand vor einem strategischen Konflikt zwischen Market
 
 ---
 
-## ⚙️ Die Ausführungs-Pipeline (Schritt für Schritt)
+## Die Ausführungs-Pipeline
 
 Um reproduzierbare und korrekte Ergebnisse für Dashboards und Präsentationen zu generieren, müssen die Skripte in der unten definierten Reihenfolge ausgeführt werden.
 
-### Phase 1: Datenaufbereitung (Jupyter Notebooks)
+### Phase 1: Datenaufbereitung
 Zunächst müssen die Rohdaten (`orders.csv`, `orderlines.csv`, `products.csv`) eingelesen, von Ausreißern befreit und vorbereitet werden. Dies passiert interaktiv in Jupyter Notebooks.
 - **Skripte:** `1.data_check_final.ipynb` & `2. merge_orders_olines.ipynb` 
 - **Ziel:** Fehlende Werte entfernen, Outlier (Ausreißer) glätten, fehlerhafte Preise (mit doppelten Punkten) filtern.
@@ -42,7 +42,7 @@ Das ist das **Herzstück der Architektur**. Dieses Skript **muss** immer als Ers
 
 ---
 
-### Phase 3: Visualisierung & Deep-Dive Analysen (Beliebige Reihenfolge)
+### Phase 3: Visualisierung & Deep-Dive Analysen 
 Sobald die `master_analysis.csv` durch Phase 2 generiert wurde, können die Visualisierungs-Skripte in völlig **beliebiger Reihenfolge** (oder parallel) ausgeführt werden. **Wichtig:** Diese Skripte sind strikt "Read-Only". Sie greifen auf die Master-Tabelle zu, verändern sie aber nicht.
 
 - **`4. category_plots.py`:** Generiert die Haupt-Grafiken für die Präsentation (Preisverteilung über Kategorien via Boxplots & generelles Rabatt-Histogramm).
